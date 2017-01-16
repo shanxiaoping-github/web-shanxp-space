@@ -5,13 +5,13 @@ body{
 #left {
     position: relative;
     float: left;
-    width: 30%;
+    width: 29.5%;
     height: 100%;
-    background-color: yellow;
 }
 #right {
+    margin-left: 15px;
     position: relative;
-    float: right;
+    float: left;
     width: 69%;
     height: 100%;
     background-color: antiquewhite;
