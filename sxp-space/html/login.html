@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script>
+        function check_login_info() {
+            if (document.user_login_form.user_name.value == ""){
+                alert("用户名不能为空");
+                return false;
+            }
+            if (document.user_login_form.user_pwd.value == ""){
+                alert("密码不能为空");
+                return false;
+            }
+            return true;
+        }
+
+        function regist_user() {
+            window.location.href = "regist.html";
+        }
+    </script>
+</head>
+<body style="padding: 20px">
+<strong style="color: darksalmon">假如生活是一场欺骗,不要懊恼，不要忧伤</strong>
+<div style="width: 300px;margin-top: 20px">
+    <form name="user_login_form" method="post" action="../php/login.php" onsubmit="return check_login_info()">
+        <input class="user_input" type="text" name="user_name" placeholder="用户名">
+        </br>
+        <input class="user_input" type="password" name="user_pwd" placeholder="密码">
+        <br>
+        <div style="margin-top: 10px">
+            <button style="width: 140px;padding:5px;position:relative;float: left">登陆</button>
+            <button type="button" style="width: 140px;padding:5px;position:relative;float: right" onclick="regist_user()">注册</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

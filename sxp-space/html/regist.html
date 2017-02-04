@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function check_regist() {
+            if (document.user_regist.user_name.value == ""){
+                alert("用户名不能为空");
+                return false;
+            }
+            if (document.user_regist.user_pwd.value == ""){
+                alert("密码不能为空");
+                return false;
+            }
+            if(document.user_regist.again_user_pwd.value == ""){
+                alert("再次输入密码")
+                return false;
+            }
+            if(document.user_regist.user_pwd.value !== document.user_regist.again_user_pwd.value) {
+                alert("两次密码输入不一样");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body style="width: 200px">
+</br>
+<strong style="margin-left:20px;font-size: 20px;color: #999999">欢迎注册异度空间</strong>
+<form name="user_regist" method="post" action="../php/regist.php" onsubmit="return check_regist()">
+    <input name="user_name" style="margin-left: 20px;margin-top: 10px;padding: 5px;width: 93%" type="text" placeholder="请输入用户名">
+    </br>
+    <input name="user_pwd" style="margin-left: 20px;margin-top: 10px;padding: 5px;width: 93%" type="password" placeholder="请输入密码">
+    </br>
+    <input name="again_user_pwd" style="margin-left: 20px;margin-top: 10px;padding: 5px;width: 93%" type="password" placeholder="请再次输入密码">
+    <button style="margin-left: 20px;margin-top: 8px;width: 100%;padding: 5px">注册</button>
+</form>
+</body>
+</html>

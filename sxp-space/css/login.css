@@ -1,0 +1,23 @@
+.user_input {
+    padding-left: 10px;
+    width: 284px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    　　color: aqua;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    　　color: aqua;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    　　color: aqua;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    　　color: aqua;
+}
+
