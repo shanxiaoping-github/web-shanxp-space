@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8ad080d0-efae-4dee-9337-876f17d9ea98" name="localhost" url="http://localhost/~shanxiaoping/web-shanxp-space  ">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+    </option>
+  </component>
+</project>
